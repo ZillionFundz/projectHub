@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple Calculator</title>
+    <link rel="stylesheet" href="styles/calculatorStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="calculator-title">ZillionFundz Calculator</div>
+        <div id="calculator">
+            <div id="display-area">
+                <input type="text" id="screen">
+            </div>
+            <div class="button-box">
+                <fieldset id="fieldset-area">
+                    <legend>Numbers</legend>
+                    <div class="numbers-buttons">
+                        <button onclick="appendToScreen('7')">7</button>
+                        <button onclick="appendToScreen('8')">8</button>
+                        <button onclick="appendToScreen('9')">9</button>
+                        <button onclick="appendToScreen('4')">4</button>
+                        <button onclick="appendToScreen('5')">5</button>
+                        <button onclick="appendToScreen('6')">6</button>
+                        <button onclick="appendToScreen('1')">1</button>
+                        <button onclick="appendToScreen('2')">2</button>
+                        <button onclick="appendToScreen('3')">3</button>
+                        <button onclick="appendToScreen('0')">0</button>
+                        <div class="gridSpan">
+                            <button onclick="appendToScreen('.')" class="button-span">.</button>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="fieldset-area">
+                    <legend>Operators</legend>
+                    <div class="operators-buttons">
+                        <button onclick="appendToScreen('+')">+</button>
+                        <button onclick="appendToScreen('-')">-</button>
+                        <button onclick="appendToScreen('*')">x</button>
+                        <button onclick="appendToScreen('/')">/</button>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="button-box-output">
+                <fieldset id="fieldset-area">
+                    <legend>Function Buttons</legend>
+                    <div class="#">
+                        <button onclick="deleteAll()">DA</button>
+                        <button onclick="deleteRecent()">DR</button>
+                        <button onclick="calculate()" class="button-span">=</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="javascripts/calculatorscript.js"></script>
+</body>
+
+</html>
