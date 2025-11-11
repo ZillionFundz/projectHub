@@ -7,7 +7,7 @@
 }
 
 body {
-    background: radial-gradient(#224224, #aa0478, #c93001);
+    background: radial-gradient(#e2e4e4, #0166ff, #5025d1);
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
@@ -28,7 +28,9 @@ body {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
-    background: hsl(197, 18%, 57%);
+    /* background: hsl(197, 18%, 57%); */
+    background: #dce7f8;
+    box-shadow: 0px 0px 7px 4px rgba(18, 38, 63, 0.2);
 }
 
 .template-title {
@@ -80,14 +82,18 @@ body {
     border: none;
     margin: 0px 0px 10px 0px;
     position: relative;
-    background-color: #aa0478;
+    /* background-image: 180deg #5025d1, #dce7f8; */
+    background: linear-gradient(#5025d1, #dce7f8);
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 #add-button:hover {
     background-color: #d10a95;
-    color: azure;
+    background: linear-gradient(#dce7f8, #5025d1);
+    color: #3f3f3f;
     transition: 450ms;
 }
 
